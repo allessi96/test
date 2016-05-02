@@ -1,0 +1,613 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+<title>Volga Beauty Festival</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link type="text/css" href="jquery.ui.theme.css" rel="stylesheet" />
+<link type="text/css" href="jquery.ui.core.css" rel="stylesheet" />
+<link type="text/css" href="jquery.ui.slider.css" rel="stylesheet" />
+		
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/GreyscaleBasic.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+			Cufon.replace('h1,h2,.fp_close,.reference');
+		</script>	
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".btn-slide").click(function(){
+		$("#menu").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	
+	 
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".btn-slide2").click(function(){
+		$("#container").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	
+	 
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".btn-slide1").click(function(){
+		$("#fp_gallery").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	
+	 
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".accordion h3:first").addClass("active");
+	$(".accordion p:not(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("p").slideToggle("slow")
+		.siblings("p:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#vb").css("background","none");
+	$("#vb").css("color","gold");
+	$("#vb").css("font-family","Monotype corsiva");
+	$("#vb").css("font-size","30px");
+	$("#content").css("float","right");
+	$("#container").css("float","left");
+});
+</script>
+<script>
+    function showContent(link) {
+        var cont = document.getElementById('content');
+        var loading = document.getElementById('loading');
+        cont.innerHTML = loading.innerHTML;  
+        var http = createRequestObject();
+        if( http ) 
+        { http.open('get', link);
+            http.onreadystatechange = function () 
+            {   if(http.readyState == 4) 
+                {   cont.innerHTML = http.responseText;  }    }
+            http.send(null);  }
+        else 
+        {  document.location = link;   }   }
+    function createRequestObject() 
+    {  try { return new XMLHttpRequest() }
+        catch(e) 
+        {  try { return new ActiveXObject('Msxml2.XMLHTTP') }
+            catch(e) 
+            {   try { return new ActiveXObject('Microsoft.XMLHTTP') }
+                catch(e) { return null; }   } } }
+</script>
+
+ </head>
+
+<body>
+<div id="menu">
+<div class="accordion">
+	<h3>Volga Beauty</h3>
+	<p id="vb">Ежегодный фестиваль</p>
+	<h3>Фестиваль 2015</h3>
+	<p>Дата проведения: 25 апреля 2015 года <br>
+Место проведения: г. Саратов ул. Театральная д.13 на площадке «Дворец творчества детей и молодежи»<br>
+Организатор: НП «ИЭКиЗ» (г. Саратов) при поддержке: Международного Фестиваля Красоты «Невские Берега» (г. Санкт-Петербург), Общественного фонда содействия развитию косметологии, парикмахерского искусства и эстетики «Невские Берега» (г. Санкт-Петербург), Правительства Саратовской области, ТПП Саратовской области и регионального отделения Опора России.<br>
+
+Концепция<br>
+1.	VIIIОткрытый Чемпионат по парикмахерскому искусству на кубок Саратовской области;<br>
+2.	VIII Областной Открытый Чемпионат по нейл-сервису на кубок Саратовской области;<br>
+3.	VIII Открытый Чемпионат по декоративной косметике на кубок Саратовской области;<br>
+4.	IV Областной Открытый чемпионат по профессиональной флористике на кубок Саратовской области;<br>
+5.	VIII Открытый Чемпионат по косметологии и массажу на кубок Саратовской области;<br>
+6.	I Открытый Чемпионат по боди-арту на кубок Саратовской области;<br>
+7.	Мастер классы известных стилистов России, Fashion показы.</p>
+	<h3>Статус участника</h3>
+	<p>1. К категории дебют относятся:<br>
+- Любые мастера, стаж работы которых не превышает 2-х лет (подтверждается дипломом об окончании профильного учебного заведения).<br>
+<br>2. К учащимся в парикмахерских номинациях относятся только учащиеся начальных и средних государственных профессиональных образовательных учреждений., частных образовательных учреждений. Основанием подлинности статуса «учащийся» является справка, заверенная подписью руководителя ОУ и государственной печатью.
+Юниоры, учащиеся, занявшие 1 место в двоеборье или индивидуальной номинации, не входящей в двоеборье, переходят соответственно в категории «мастера», «юниоры» для участия в последующих соревнованиях в данном двоеборье или номинации. Исключение составляют юниоры и учащиеся, заявившиеся на Гран-При.
+<br>3. Ответственность за подлинность статуса лежит на участнике Чемпионата.
+<br>4. За несоблюдение вышеуказанных правил - дисквалификация!
+<br>5. Дисквалификация может осуществляться на любом этапе.</p>
+	<h3>Контакты</h3>
+	<p>Председатель Некоммерческого Партнерства <br>
+«Индустрия эстетики, красоты и здоровья»<br>
+Стеклова Наталия Александровна<br>
+<br>
+Оргкомитет фестиваля «Volga Beauty 2015»<br>
+тел.: (8452) 58-00-37, 58-00-47.</p>
+	<h3>Участие</h3>
+	<p>1.	Заявки на участие в фестивале принимаются по адресу: г.Саратов, ул. Зарубина 18 оф.39; или по электронной почте: festivalvb@ya.ru<br>
+2.	Заявки на участие в Чемпионате и Изменения в заявках принимаются до 01 апреля 2015 года включительно. <br>
+3.	Регистрационный сбор за участие в чемпионате составляет: учащиеся - 500 рублей; юниор-дебют - 1000 рублей; мастер - 1500 рублей / неограниченное количество номинаций. (Для членов НП скидка 10%)
+<br>4.	Реквизиты для оплаты:
+<br>НП «ИЭКиЗ» г.Саратов ул.Чернышевского д.130
+<br>ИНН 6450999520/КПП 645001001
+<br>ОГРН 1116400003510
+<br>ЗАО АКБ «Экспресс-Волга»
+<br>р/с 40703810700000024888
+<br>к/с 30101810600000000808
+<br>бик 046311808
+<br>Назначение платежа: организационный сбор за участие в чемпионате</p>
+</div>
+<a href="form.html"><h3>Отправить заявку</h3></a>
+	
+</div>
+
+<div id="container">
+<div id="leftt">
+<a href="Александр Кулиш.html" onclick="return showContent(this.href), false">Александр Кулиш</a><br>
+<a href="Алеся Пластинкина.html" onclick="return showContent(this.href), false">Алеся Пластинкина</a><br>
+<a href="Владимир Ацеховский.html" onclick="return showContent(this.href), false">Владимир Ацеховский</a><br>
+<a href="Лола Ольшанская.html" onclick="return showContent(this.href), false">Лола Ольшанская</a><br>
+<a href="Татьяна Роот.html" onclick="return showContent(this.href), false">Татьяна Роот</a><br>
+<a href="Юлия Романова.html" onclick="return showContent(this.href), false">Юлия Романова</a><br>
+<a href="Юрий Ветров.html" onclick="return showContent(this.href), false">Юрий Ветров</a></div>
+<div id="rightt">
+<div id="content">
+</div> 
+    <div id="loading" style="display: none"> 
+    Идет загрузка... 
+    </div> </div>
+</div>
+
+<p class="slide"><a href="#" class="btn-slide">Меню</a></p>
+<p class="slide"><a href="#" class="btn-slide2">Жюри</a></p>
+<p class="slide"><a href="#" class="btn-slide1">Галерея</a></p>
+<div id="fp_gallery" class="fp_gallery">
+			<img src="images/bgimg.jpg" class="fp_bgImage" />
+			<div class="fp_bgPattern"></div>
+			<h1>Volga Beauty</h1>
+			<h2>Gallery</h2>
+			<ul id="fp_galleryList" class="fp_galleryList">
+				<li>Make up 2015</li>
+			</ul>
+			<div id="fp_thumbContainer">
+				<div id="fp_thumbScroller">
+					<div class="container">
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/1.jpg" alt="images/album1/1.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/2.jpg" alt="images/album1/2.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/3.jpg" alt="images/album1/3.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/4.jpg" alt="images/album1/4.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/5.jpg" alt="images/album1/5.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/6.jpg" alt="images/album1/6.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/7.jpg" alt="images/album1/7.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/8.jpg" alt="images/album1/8.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/9.jpg" alt="images/album1/9.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/10.jpg" alt="images/album1/10.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/11.jpg" alt="images/album1/11.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="images/album1/thumbs/12.jpg" alt="images/album1/12.jpg" class="thumb" /></a></div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+
+			<div id="fp_scrollWrapper" class="fp_scrollWrapper">
+				<span id="fp_prev_thumb" class="fp_prev_thumb"></span>
+				<div id="slider" class="slider"></div>
+				<span id="fp_next_thumb" class="fp_next_thumb"></span>
+			</div>
+
+			<div id="fp_overlay" class="fp_overlay"></div>
+			<div id="fp_loading" class="fp_loading"></div>
+			<div id="fp_next" class="fp_next"></div>
+			<div id="fp_prev" class="fp_prev"></div>
+			<div id="fp_close" class="fp_close">Close</div>
+			<p class="slide"><a href="#" class="btn-slide">Меню</a></p>
+			<p class="slide"><a href="#" class="btn-slide2">Жюри</a></p>
+			<p class="slide"><a href="#" class="btn-slide1">Галерея</a></p>
+		
+		</div>
+			
+        
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $fp_gallery			= $('#fp_gallery')
+				var $fp_overlay			= $('#fp_overlay');
+				var $fp_loading			= $('#fp_loading');
+				var $fp_next			= $('#fp_next');
+				var $fp_prev			= $('#fp_prev');
+				var $fp_close			= $('#fp_close');
+				var $fp_thumbContainer 	= $('#fp_thumbContainer');
+				var $fp_scrollWrapper	= $('#fp_scrollWrapper');
+				var nmb_images=0;
+				var gallery_idx=-1;
+				var $fp_thumbScroller	= $('#fp_thumbScroller');
+				var $slider				= $('#slider');
+				var $fp_galleries		= $('#fp_galleryList > li');
+				var current				= 0;
+				
+				var photo_nav			= true;
+				
+				$fp_galleries.bind('click',function(){
+					$fp_galleries.removeClass('current');
+					var $gallery 		= $(this);
+					$gallery.addClass('current');
+					var gallery_index 	= $gallery.index();
+					if(gallery_idx == gallery_index) return;
+					gallery_idx			= gallery_index;
+					if($fp_thumbContainer.data('opened')==true){
+						$fp_scrollWrapper.fadeOut();
+						$fp_thumbContainer.stop()
+										  .animate({'height':'0px'},200,function(){
+											openGallery($gallery);
+										  });
+					}				  
+					else
+						openGallery($gallery);
+				});
+					
+				function openGallery($gallery){
+					current				= 0;
+					var $fp_content_wrapper = $fp_thumbContainer.find('.container:nth-child('+parseInt(gallery_idx+1)+')');
+					$fp_thumbContainer.find('.container').not($fp_content_wrapper).hide();
+					$fp_content_wrapper.show();
+					nmb_images			= $fp_content_wrapper.children('div').length;
+					var w_width 	= 0;
+					var padding_l	= 0;
+					var padding_r	= 0;
+					var center		= $(window).width()/2;
+					var one_divs_w  = 0;
+					
+					$fp_content_wrapper.children('div').each(function(i){
+						var $div 		= $(this);
+						var div_width	= $div.width(); 
+						w_width			+=div_width;
+						if(i==0)
+							padding_l = center - (div_width/2);
+						if(i==(nmb_images-1)){
+							padding_r = center - (div_width/2);
+							one_divs_w= div_width;
+						}	
+					}).end().css({
+						'width'				: w_width + 'px',
+						'padding-left' 		: padding_l + 'px',
+						'padding-right' 	: padding_r + 'px'
+					});
+					
+					$fp_thumbScroller.scrollLeft(w_width);
+					
+					$slider.slider('destroy').slider({
+						orientation	: 'horizontal',
+						max			: w_width -one_divs_w,//total width minus one content div width
+						min			: 0,
+						value		: 0,
+						slide		: function(event, ui) {
+							$fp_thumbScroller.scrollLeft(ui.value);
+						},
+						stop: function(event, ui) {
+							checkClosest();
+						}
+					});
+					$fp_thumbContainer.animate({'height':'240px'},200,function(){
+						$(this).data('opened',true);
+						$fp_scrollWrapper.fadeIn();
+					});
+					
+					$fp_thumbScroller.stop()
+									 .animate({'scrollLeft':'0px'},2000,'easeInOutExpo');
+
+					$fp_content_wrapper.find('.content')
+									 .bind('click',function(e){
+						var $current 	= $(this);
+						current			= $current.index();
+						centerImage($current,true,600);
+						e.preventDefault();
+					});					
+				}
+				
+				$fp_thumbScroller.scroll(function(){
+					$slider.slider('value',parseInt($fp_thumbScroller.scrollLeft(),10));
+				});
+				
+				$fp_next.bind('click',function(){
+					if(photo_nav){
+						photo_nav = false;
+					navigate(1);
+					}	
+				});
+				
+				$fp_prev.bind('click',function(){
+					if(photo_nav){
+						photo_nav = false;
+					navigate(0);
+					}	
+				});
+				
+				$('#fp_next_thumb').click(function(){
+					slideThumb(1);
+				});
+				
+				$('#fp_prev_thumb').click(function(){
+					slideThumb(0);
+				});
+				
+				$fp_close.bind('click',function(){
+					if(!photo_nav) return;
+					var windowS 		= $(window).scrollTop();
+					var $large_img		= $('#fp_preview');
+					var $current 		= $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+														   .find('.content:nth-child('+parseInt(current+1)+')');
+					
+					var current_offset	= $current.offset();
+					$large_img.stop().animate({
+						'top'			: current_offset.top + windowS + 'px',
+						'left'			: $(window).width()/2 - $current.width()/2 + 'px',
+						'width'			: $current.width() + 'px',
+						'height'		: $current.height() + 'px',
+						'opacity'		: 0
+					},800,function(){
+						$(this).remove();
+					hidePreviewFunctions();
+				});
+				
+					
+				});
+				
+				function centerImage($obj,open,speed){
+					var obj_left 			= $obj.offset().left;
+					var obj_center 			= obj_left + ($obj.width()/2);
+					var center				= $(window).width()/2;
+					var currentScrollLeft 	= parseFloat($fp_thumbScroller.scrollLeft(),10);
+		
+					var move 				= currentScrollLeft + (obj_center - center);
+					if(move != $fp_thumbScroller.scrollLeft())
+						$fp_thumbScroller.stop()
+										 .animate({scrollLeft: move}, speed,function(){
+							if(open)
+								enlarge($obj);
+						});
+					else if(open)
+						enlarge($obj);
+				}
+				
+				function enlarge($obj){
+					var $thumb = $obj.find('img');
+					$fp_loading.show();
+					$('<img id="fp_preview" />').load(function(){
+						var $large_img 	= $(this);
+						
+						$('#fp_preview').remove();
+						
+						$large_img.addClass('fp_preview');
+						var obj_offset 	= $obj.offset();
+						$large_img.css({
+							'width'	: $thumb.width() + 'px',
+							'height': $thumb.height() + 'px',
+							'top'	: obj_offset.top + 'px',
+							'left'	: obj_offset.left + 5 + 'px'
+						}).appendTo($fp_gallery);
+						getFinalValues($large_img);
+						var largeW 	= $large_img.data('width');
+						var largeH 	= $large_img.data('height');
+						var $window = $(window);
+						var windowW = $window.width();
+						var windowH = $window.height();
+						var windowS = $window.scrollTop();
+						$fp_loading.hide();
+						$fp_overlay.show();
+						$large_img.stop().animate({
+							'top'		: windowH/2 -largeH/2 + windowS + 'px',
+							'left'		: windowW/2 -largeW/2 + 'px',
+							'width'		: largeW + 'px',
+							'height'	: largeH + 'px',
+							'opacity'	: 1
+						},800,function(){
+							showPreviewFunctions();
+						});
+					}).attr('src',$thumb.attr('alt'));
+				}
+				
+				function navigate(way){
+					$fp_loading.show();
+					if(way==1){
+						++current;
+						var $current = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+														.find('.content:nth-child('+parseInt(current+1)+')');
+						if($current.length == 0){
+							--current;
+							$fp_loading.hide();
+							photo_nav = true;
+							return;
+						}
+					}
+					else{
+						--current;
+						var $current = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+														.find('.content:nth-child('+parseInt(current+1)+')');
+						if($current.length == 0){
+							++current;
+							$fp_loading.hide();
+							photo_nav = true;
+							return;
+						}
+					}
+						
+					$('<img id="fp_preview" />').load(function(){
+						$fp_loading.hide();
+						var $large_img 		= $(this);
+						var $fp_preview 	= $('#fp_preview');
+						
+						var animate_to 		= -$fp_preview.width();
+						var animate_from	= $(window).width();
+						if(way==0){
+							animate_to 		= $(window).width();
+							animate_from	= -$fp_preview.width();
+						}
+						
+						centerImage($current,false,1000);
+						
+						$fp_preview.stop().animate({'left':animate_to+'px'},500,function(){
+							$(this).remove();
+							$large_img.addClass('fp_preview');
+							getFinalValues($large_img);
+							var largeW 	= $large_img.data('width');
+							var largeH 	= $large_img.data('height');
+							var $window	= $(window);
+							var windowW = $window.width();
+							var windowH = $window.height();
+							var windowS = $window.scrollTop();
+							$large_img.css({
+								'width'	: largeW+'px',
+								'height': largeH+'px',
+								'top'	: windowH/2 -largeH/2 + windowS + 'px',
+								'left'		: animate_from + 'px',
+								'opacity' 	: 1	
+							}).appendTo($fp_gallery)
+							  .stop()
+							  .animate({'left':windowW/2 -largeW/2+'px'},500,function(){photo_nav = true;});
+						});
+					}).attr('src',$current.find('img').attr('alt'));	
+				}
+				
+				function showPreviewFunctions(){
+					$fp_next.stop().animate({'right':'0px'},500);
+					$fp_prev.stop().animate({'left':'0px'},500);
+					$fp_close.show();
+				}
+				
+				//hide the overlay, and the next, previous and close buttons
+				function hidePreviewFunctions(){
+					$fp_next.stop().animate({'right':'-50px'},500);
+					$fp_prev.stop().animate({'left':'-50px'},500);
+					$fp_close.hide();
+					$fp_overlay.hide();
+				}
+				
+				function getFinalValues($image){
+					var widthMargin		= 0
+					var heightMargin 	= 20;
+					var $window			= $(window);
+					var windowH      	= $window.height()-heightMargin;
+					var windowW      	= $window.width()-widthMargin;
+					var theImage     = new Image();
+					theImage.src     = $image.attr("src");
+					var imgwidth     = theImage.width;
+					var imgheight    = theImage.height;
+
+					if((imgwidth > windowW)||(imgheight > windowH)){
+						if(imgwidth > imgheight){
+							var newwidth = windowW;
+							var ratio = imgwidth / windowW;
+							var newheight = imgheight / ratio;
+							theImage.height = newheight;
+							theImage.width= newwidth;
+							if(newheight>windowH){
+								var newnewheight = windowH;
+								var newratio = newheight/windowH;
+								var newnewwidth =newwidth/newratio;
+								theImage.width = newnewwidth;
+								theImage.height= newnewheight;
+							}
+						}
+						else{
+							var newheight = windowH;
+							var ratio = imgheight / windowH;
+							var newwidth = imgwidth / ratio;
+							theImage.height = newheight;
+							theImage.width= newwidth;
+							if(newwidth>windowW){
+								var newnewwidth = windowW;
+								var newratio = newwidth/windowW;
+								var newnewheight =newheight/newratio;
+								theImage.height = newnewheight;
+								theImage.width= newnewwidth;
+							}
+						}
+					}
+					$image.data('width',theImage.width);
+					$image.data('height',theImage.height);
+				}
+				
+				function slideThumb(way){
+					if(way==1){
+						++current;
+						var $next = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+													 .find('.content:nth-child('+parseInt(current+1)+')');
+						if($next.length > 0)
+							centerImage($next,false,600);
+						else{
+							--current;
+							return;
+						}	
+					}
+					else{
+						--current;
+						var $prev = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+													 .find('.content:nth-child('+parseInt(current+1)+')');
+						if($prev.length > 0)
+							centerImage($prev,false,600);
+						else{
+							++current;
+							return;
+						}	
+					}					
+				}
+				
+				function checkClosest(){
+					var center 				= $(window).width()/2;
+					var current_distance 	= 99999999;
+					var idx					= 0;	
+					$container				= $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')');
+					$container.find('.content').each(function(i){
+						var $obj 		= $(this);
+						var obj_left 	= $obj.offset().left;
+						var obj_center 	= obj_left + ($obj.width()/2);
+						var distance	= Math.abs(center-obj_center);
+						if(distance < current_distance){
+							current_distance 	= distance;
+							idx					= i;
+						}	
+					});
+					var $new_current 	= $container.find('.content:nth-child('+parseInt(idx+1)+')');
+					current 			= $new_current.index();
+					centerImage($new_current,false,200);
+				}
+			});
+		</script>
+</body>
+</html>
